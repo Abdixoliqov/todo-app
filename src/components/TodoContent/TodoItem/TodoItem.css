@@ -1,0 +1,53 @@
+.todo-item {
+    padding: 20px 2rem;
+    border-bottom: 1px solid rgb(227, 228, 241);
+}
+
+.todo-item-title {
+    color: rgb(73, 76, 107);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    text-transform: capitalize;
+}
+
+.check-label {
+    /* background-color: aliceblue; */
+    border: 1px solid rgb(227, 228, 241);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.check-label:hover {
+    /* border: 1px solid transparent;
+    border-image-slice: linear-gradient(135.00deg, rgb(85, 221, 255)rgb(192, 88, 243))!important; */
+    
+    /* border: 1px solid transparent;
+    border-image: linear-gradient(rgb(85, 221, 255),rgb(192, 88, 243));
+     -moz-border-image: -moz-linear-gradient(#0B0E7F , #0B95DD);
+    -webkit-border-image: -webkit-linear-gradient(#0B0E7F , #0B95DD);
+    border-image-slice: 1;
+    border-radius: 50%; */
+
+    
+    /* background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 1px solid transparent; */
+}
+
+.check-label-checked {
+    background: linear-gradient(135.00deg, rgb(85, 221, 255), rgb(192, 88, 243) 100%);
+}
+
+.check-label svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

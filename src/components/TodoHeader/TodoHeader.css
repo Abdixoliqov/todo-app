@@ -1,0 +1,17 @@
+.todo-header {
+    max-width: 541px;
+    width: 100%;
+    /* padding: 60px; */
+    margin-bottom: 40px;
+    /* background-color: red; */
+}
+
+.todo-header-title {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
