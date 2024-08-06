@@ -9,8 +9,18 @@ function TodoContent({ todos, onCompleted }) {
         {text: 'Completed', isActive: false},
     ]);
 
-    function handleClick(e) {
+    function handleClick(index) {
+        const newFilter = [...filter]
+        newFilter.forEach((item, idx)=>{
+            if(idx === index) {
+                item.isActive = true
+            }
+            if(idx !== index) {
+                item.isActive = false
+            }
+        })
         
+        setFilter(newFilter)
     }
     return (
         <div className="todo-content">
@@ -29,7 +39,7 @@ function TodoContent({ todos, onCompleted }) {
                     {
                         filter.map((item, index)=>{
                             return(
-                                <span className={`${item.isActive? 'active' : ''}`} onClick={handleClick}>{item.text}</span>
+                                <span className={`${item.isActive? 'active' : ''}`} onClick={()=>handleClick(index)}>{item.text}</span>
                             )
                         })
                     }
